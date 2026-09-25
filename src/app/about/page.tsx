@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import CeoSection from "@/components/about/CeoSection";
 import PrinciplesSection from "@/components/about/PrinciplesSection";
@@ -16,10 +17,18 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="pt-16 lg:pt-20">
-      <section className="min-h-[60vh] bg-stone flex items-center justify-center">
-        <div className="text-center px-5">
-          <p className="label-en mb-4">About</p>
-          <h1 className="font-serif text-3xl lg:text-5xl font-light text-ink tracking-wide whitespace-pre-line">
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-ink">
+        <Image
+          src="/images/about/office-building.jpg"
+          alt="(주)153시온건축사사무소 사옥 외관"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/40" />
+        <div className="relative z-10 text-center px-5">
+          <p className="label-en mb-4 text-white/70">About</p>
+          <h1 className="font-serif text-3xl lg:text-5xl font-light text-white tracking-wide whitespace-pre-line">
             {aboutContent.heroTitle}
           </h1>
         </div>
