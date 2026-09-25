@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { heroContent } from "@/lib/content";
 import PlaceholderImage from "@/components/ui/PlaceholderImage";
@@ -30,7 +31,17 @@ export default function HeroSection() {
               i === activeSlide ? "opacity-100" : "opacity-0"
             }`}
           >
-            <PlaceholderImage alt={slide.alt} className="w-full h-full" />
+            {slide.src.startsWith("/images/placeholder/") ? (
+              <PlaceholderImage alt={slide.alt} className="w-full h-full" />
+            ) : (
+              <Image
+                src={slide.src}
+                alt={slide.alt}
+                fill
+                priority={i === 0}
+                className="object-cover"
+              />
+            )}
           </div>
         ))}
         {/* 가독성을 위한 어두운 그라디언트 오버레이 */}

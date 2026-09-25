@@ -29,7 +29,7 @@ export const heroContent = {
   label: "Architecture · Supervision · Permit",
   /** 히어로 슬라이드 이미지 (5장 이미지 가이드 참고) */
   slides: [
-    { src: "/images/placeholder/hero-01-factory.jpg", alt: "판넬 공장 외관 — 해 질 녘" },
+    { src: "/images/hero/office-building.jpg", alt: "(주)153시온건축사사무소 사옥 외관" },
     { src: "/images/placeholder/hero-02-warehouse.jpg", alt: "대형 창고 — 흐린 날 은은한 빛" },
     { src: "/images/placeholder/hero-03-church.jpg", alt: "소도시 교회 — 저녁 조명" },
   ],
