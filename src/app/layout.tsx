@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Serif_KR } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import MobileBottomCTA from "@/components/layout/MobileBottomCTA";
 
 /* ─── 폰트 설정 ───────────────────────────────────────────────
    - Pretendard: globals.css에서 CDN으로 로드 (font-sans)
@@ -56,19 +53,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="ko" className={`${notoSerifKr.variable} h-full`}>
-      <body className="min-h-full flex flex-col bg-white text-ink">
-        {/* ── 헤더 (투명 → 스크롤 시 블러 전환) ── */}
-        <Header />
-
-        {/* ── 페이지 콘텐츠 ── */}
-        <main className="flex-1">{children}</main>
-
-        {/* ── 푸터 ── */}
-        <Footer />
-
-        {/* ── 모바일 하단 고정 CTA 바 ── */}
-        <MobileBottomCTA />
-      </body>
+      <body className="min-h-full flex flex-col bg-white text-ink">{children}</body>
     </html>
   );
 }
