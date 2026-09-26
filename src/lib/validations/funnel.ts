@@ -43,3 +43,25 @@ export const siteReviewFormSchema = z.object({
 });
 
 export type SiteReviewFormValues = z.infer<typeof siteReviewFormSchema>;
+
+/* ─── 소개 폼 검증 스키마 ────────────────────────────────────── */
+export const referralFormSchema = z.object({
+  referrerName: z.string().min(1, "성함을 입력해주세요"),
+  referrerPhone: z
+    .string()
+    .min(1, "연락처를 입력해주세요")
+    .regex(/^[0-9-]{9,13}$/, "올바른 연락처 형식이 아닙니다 (예: 010-1234-5678)"),
+  refereeName: z.string().optional(),
+  refereePhone: z
+    .string()
+    .optional()
+    .refine((v) => !v || /^[0-9-]{9,13}$/.test(v), {
+      message: "올바른 연락처 형식이 아닙니다 (예: 010-1234-5678)",
+    }),
+  message: z.string().optional(),
+  privacyConsent: z
+    .boolean()
+    .refine((v) => v === true, { message: "개인정보 수집·이용에 동의해주세요" }),
+});
+
+export type ReferralFormValues = z.infer<typeof referralFormSchema>;

@@ -377,3 +377,17 @@ export const siteReviewThanksContent = {
   ],
   phoneNote: "급하신 경우 바로 전화 주셔도 됩니다",
 } as const;
+
+/* ── 설계의뢰 퍼널: 소개 페이지 ───────────────────────────────
+   근거: funnel/research/10_follow-up.md (소개 퍼널, 사례비 3%) */
+export const referralContent = {
+  headline: "소개해주시면, 사례비를 드립니다",
+  subheadline: "계약이 이어지면 계약금액의 3%를 사례비로 드립니다.",
+  body: "공장·창고를 계획 중이신 분이 주변에 계시면, 편하게 연락처만 알려주셔도 됩니다. 저희가 먼저 연락드리겠습니다.",
+  rewardNote: "예: 300평 공장(설계비 약 1,200만원) 소개 시 사례비 약 36만원",
+  formTitle: "소개하기",
+  helperNote: "피소개자분께 미리 안내해주시면 더 좋습니다.",
+  ctaLabel: "소개하기",
+  successTitle: "소개해주셔서 감사합니다",
+  successBody: "빠른 시일 안에 연락드리겠습니다. 계약이 이어지면 사례비를 꼭 챙겨드리겠습니다.",
+} as const;
