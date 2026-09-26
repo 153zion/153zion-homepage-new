@@ -324,6 +324,28 @@ export const checklistContent = {
   ],
 } as const;
 
+/* ── 설계의뢰 퍼널: 무료 부지 검토 신청 페이지 ───────────────
+   근거: funnel/research/02(빅도미노), 07(제안스택), 08(FAQ 재사용) */
+export const siteReviewContent = {
+  headline: offerContent.headline,
+  subheadline: offerContent.subheadline,
+  offerStack: [
+    { label: "핵심 서비스", text: "무료 부지 검토 — 토지이용계획, 진입로·지목, 개발행위허가 필요 여부까지 확인" },
+    { label: "보너스", text: "공장부지 인허가 자가진단표 (체크리스트)" },
+    { label: "리스크 제거", text: "검토 결과가 마음에 안 드시면 그걸로 끝입니다. 어떤 의무도 없습니다." },
+    { label: "신뢰 요소", text: "관급 설계 경험 — 절차와 원가를 더 정확하게 관리합니다." },
+  ],
+  scarcityNote: offerContent.scarcityNote,
+  process: [
+    { step: "1", title: "신청", desc: "부지 주소만 알려주셔도 됩니다" },
+    { step: "2", title: "검토", desc: "토지이용계획·진입로·지목 확인" },
+    { step: "3", title: "결과 안내", desc: "전화 또는 문자로 결과 전달" },
+    { step: "4", title: "상담", desc: "원하시면 대표 건축사와 직접 상담" },
+  ],
+  formTitle: "무료 부지 검토 신청하기",
+  ctaLabel: offerContent.ctaPrimary.label,
+} as const;
+
 /* ── 설계의뢰 퍼널: 감사·브릿지 페이지 ─────────────────────── */
 export const checklistThanksContent = {
   title: "자가진단표, 확인하셨나요?",
@@ -340,4 +362,18 @@ export const checklistThanksContent = {
   nextStepTitle: "지금 갖고 계신 땅, 무료로 검토해드립니다",
   nextStepBody: "9개 항목 중 하나라도 확실하지 않으시면, 계약 의무 없이 무료로 검토받아보세요.",
   ctaLabel: "무료 부지 검토 신청하기",
+} as const;
+
+/* ── 설계의뢰 퍼널: 신청완료·상담예약 페이지 ─────────────────
+   근거: funnel/research/11_funnel-blueprint.md 페이지 ④ */
+export const siteReviewThanksContent = {
+  title: "신청이 접수되었습니다",
+  body: "부지 검토 결과는 영업일 기준 1~2일 안에 전화 또는 문자로 안내드립니다.",
+  prepTitle: "미리 준비해두시면 좋은 것",
+  prepItems: [
+    "부지 주소 또는 지번",
+    "토지대장·토지이용계획확인원 (있으시면)",
+    "계획 중인 용도(공장/창고 등)와 대략적인 규모",
+  ],
+  phoneNote: "급하신 경우 바로 전화 주셔도 됩니다",
 } as const;

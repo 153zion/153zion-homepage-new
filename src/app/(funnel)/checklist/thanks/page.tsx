@@ -57,7 +57,7 @@ export default function ChecklistThanksPage() {
             {checklistThanksContent.nextStepBody}
           </p>
           <Link
-            href="/contact"
+            href="/site-review"
             className="inline-flex items-center justify-center px-8 py-4 bg-accent text-white font-sans text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
           >
             {checklistThanksContent.ctaLabel}
