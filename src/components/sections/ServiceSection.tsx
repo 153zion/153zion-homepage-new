@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { servicesContent } from "@/lib/content";
 import PlaceholderImage from "@/components/ui/PlaceholderImage";
@@ -20,7 +21,18 @@ export default function ServiceSection() {
               href={item.href}
               className="group block border border-concrete/15 hover:border-accent/50 transition-colors"
             >
-              <PlaceholderImage alt={item.alt} className="w-full aspect-[4/3]" />
+              {item.image.startsWith("/images/placeholder/") ? (
+                <PlaceholderImage alt={item.alt} className="w-full aspect-[4/3]" />
+              ) : (
+                <div className="relative w-full aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.alt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              )}
               <div className="p-6">
                 <p className="label-en mb-2 text-concrete">{item.label}</p>
                 <h3 className="font-serif text-xl font-light text-ink mb-2 tracking-wide">
