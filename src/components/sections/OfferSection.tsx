@@ -1,18 +1,16 @@
 import Link from "next/link";
 import { Check } from "lucide-react";
 import { offerContent } from "@/lib/content";
-import PlaceholderImage from "@/components/ui/PlaceholderImage";
 
 /* ─── 메인 제안(CTA) 섹션 ──────────────────────────────────────
-   페이지 하단 최종 전환 유도 섹션
+   페이지 하단 최종 전환 유도 섹션. 참고 사이트의 화려한 그라데이션
+   마무리 배너를 브랜드 색(인디고·퍼플)으로 적용.
 ──────────────────────────────────────────────────────────── */
 export default function OfferSection() {
   return (
-    <section className="relative bg-ink py-20 lg:py-40 overflow-hidden">
-      <div className="absolute inset-0">
-        <PlaceholderImage alt="대지 전경" className="w-full h-full opacity-40" />
-        <div className="absolute inset-0 bg-ink/70" />
-      </div>
+    <section className="relative bg-gradient-to-br from-indigo-950 via-indigo-900 to-purple-900 py-20 lg:py-40 overflow-hidden">
+      <div className="absolute -top-24 left-1/4 w-[28rem] h-[28rem] rounded-full bg-purple-500/20 blur-3xl" />
+      <div className="absolute -bottom-32 -right-20 w-[32rem] h-[32rem] rounded-full bg-indigo-400/15 blur-3xl" />
 
       <div className="relative z-10 max-w-[760px] mx-auto px-5 lg:px-10 text-center">
         <h2 className="font-serif text-3xl lg:text-5xl font-light text-white tracking-wide mb-6 whitespace-pre-line">
@@ -34,13 +32,13 @@ export default function OfferSection() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <Link
             href={offerContent.ctaPrimary.href}
-            className="inline-flex items-center justify-center px-8 py-4 bg-accent text-white font-sans text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors w-full sm:w-auto"
+            className="inline-flex items-center justify-center px-8 py-4 bg-white text-indigo-900 font-sans text-sm font-semibold tracking-wide rounded-full hover:bg-white/90 transition-colors w-full sm:w-auto shadow-lg shadow-indigo-950/30"
           >
             {offerContent.ctaPrimary.label}
           </Link>
           <a
             href={offerContent.ctaPhone.href}
-            className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-sans text-sm font-medium tracking-wide hover:bg-white/10 transition-colors w-full sm:w-auto"
+            className="inline-flex items-center justify-center px-8 py-4 border border-white/40 text-white font-sans text-sm font-medium tracking-wide rounded-full hover:bg-white/10 transition-colors w-full sm:w-auto"
           >
             {offerContent.ctaPhone.label}
           </a>
