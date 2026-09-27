@@ -169,13 +169,13 @@ export const processContent = {
 } as const;
 
 /* ── 숫자 증거 섹션 ──────────────────────────────────────── */
+/* 2022~2025년 연혁(aboutContent.history)에 기재된 건수를 그대로 합산한 값. */
 export const statsContent = {
-  /** [대표님 확인] 실제 수치로 교체 */
   items: [
-    { value: 0, suffix: "+", label: "누적 설계 건수", note: "[대표님 확인]" },
-    { value: 0, suffix: "+", label: "공장·창고 수행", note: "[대표님 확인]" },
-    { value: 0, suffix: "개", label: "교회 설계", note: "[대표님 확인]" },
-    { value: 0, suffix: "년+", label: "설계 경력", note: "[대표님 확인]" },
+    { value: 233, suffix: "+", label: "누적 프로젝트 수행", note: "" },
+    { value: 183, suffix: "+", label: "민간용역", note: "" },
+    { value: 50, suffix: "+", label: "관급·감리용역", note: "" },
+    { value: 5, suffix: "년+", label: "설계 경력", note: "" },
   ],
 } as const;
 
@@ -241,9 +241,12 @@ export const aboutContent = {
       description: "안성·평택·용인 등 경기 남부 인허가 경험을 갖습니다.",
     },
   ],
-  /** [대표님 확인] 추가 연혁이 있다면 이어서 추가 */
   history: [
-    { year: "2021.03", event: "(주)153시온건축사사무소 개업" },
+    { year: "2021.03", event: "153시온건축사사무소 개업" },
+    { year: "2022", event: "민간용역 원룸 외 31건 · 관급용역 안성맞춤 박물관 리모델링 외 7건 · 감리용역 금북정맥 국가생태문화탐방로 외 4건" },
+    { year: "2023", event: "민간용역 창고 외 50건 · 관급용역 천남초 급식실 현대화 외 10건 · 감리용역 안성고 급식실 증축공사 외 9건" },
+    { year: "2024", event: "민간용역 주유소 외 45건 · 관급용역 한경대학교 ROTC 리모델링 외 10건 · 감리용역 세종-포천선 건축물 해체공사 외 2건" },
+    { year: "2025", event: "법인 전환, (주)153시온건축사사무소로 확장 · 민간용역 공장 외 57건 · 관급용역 국민체육센터 실내건축 외 5건 · 감리용역 장애인 승강기 및 경사로 외 3건" },
   ],
 } as const;
 
