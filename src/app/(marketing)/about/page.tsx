@@ -3,7 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import CeoSection from "@/components/about/CeoSection";
 import PrinciplesSection from "@/components/about/PrinciplesSection";
+import LocalStrengthSection from "@/components/about/LocalStrengthSection";
+import TeamSection from "@/components/about/TeamSection";
 import ServicesDetailSection from "@/components/about/ServicesDetailSection";
+import AdminServiceSection from "@/components/about/AdminServiceSection";
 import HistorySection from "@/components/about/HistorySection";
 import { aboutContent } from "@/lib/content";
 
@@ -36,7 +39,10 @@ export default function AboutPage() {
 
       <CeoSection />
       <PrinciplesSection />
+      <LocalStrengthSection />
+      <TeamSection />
       <ServicesDetailSection />
+      <AdminServiceSection />
       <HistorySection />
 
       {/* ── 페이지 하단 CTA ── */}
