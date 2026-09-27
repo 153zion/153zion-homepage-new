@@ -11,7 +11,6 @@ export default function LeadMagnetSection() {
       <div className="max-w-[880px] mx-auto px-5 lg:px-10">
         <div className="border border-accent/30 bg-stone/60 px-8 py-12 lg:px-16 lg:py-16 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           <div className="flex-1 text-center lg:text-left">
-            <p className="label-en mb-3 text-accent">Free Checklist</p>
             <h3 className="font-serif text-xl lg:text-2xl font-light text-ink mb-3 tracking-wide">
               {leadMagnetContent.title}
             </h3>

@@ -34,7 +34,6 @@ export default function ServiceSection() {
                 </div>
               )}
               <div className="p-6">
-                <p className="label-en mb-2 text-concrete">{item.label}</p>
                 <h3 className="font-serif text-xl font-light text-ink mb-2 tracking-wide">
                   {item.title}
                 </h3>

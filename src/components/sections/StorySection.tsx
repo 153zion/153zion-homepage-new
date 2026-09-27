@@ -8,7 +8,6 @@ export default function StorySection() {
   return (
     <section className="bg-ink py-20 lg:py-40">
       <div className="max-w-[800px] mx-auto px-5 lg:px-10 text-center">
-        <p className="label-en mb-8 text-white/50">Story</p>
         <p className="font-serif text-lg lg:text-2xl font-light text-white/90 leading-loose whitespace-pre-line mb-10">
           {storyContent.story}
         </p>

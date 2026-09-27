@@ -20,7 +20,6 @@ export default function ServicesDetailSection() {
               className="group flex items-center justify-between gap-6 py-6 hover:bg-stone/60 transition-colors px-2"
             >
               <div>
-                <p className="label-en mb-1.5 text-concrete">{item.label}</p>
                 <h3 className="font-serif text-lg lg:text-xl font-light text-ink tracking-wide mb-1">
                   {item.title}
                 </h3>

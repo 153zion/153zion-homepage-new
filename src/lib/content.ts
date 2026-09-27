@@ -26,7 +26,6 @@ export const heroContent = {
     "공장·창고부터 교회, 주택까지. 안성에서 인허가와 사용승인을 끝까지 책임지는 (주)153시온건축사사무소입니다.",
   ctaPrimary: { label: "우리 땅 무료로 검토받기", href: "/contact" },
   ctaSecondary: { label: `${siteConfig.phone} 전화 상담`, href: `tel:${siteConfig.phone}` },
-  label: "Architecture · Supervision · Permit",
   /** 히어로 슬라이드 이미지 (5장 이미지 가이드 참고) */
   slides: [
     { src: "/images/hero/office-building.jpg", alt: "(주)153시온건축사사무소 사옥 외관" },
@@ -67,7 +66,7 @@ export const storyContent = {
 저희가 부지 조건부터 다시 검토해 개발행위허가 방향을 바꿨고,
 결국 ○개월 만에 허가와 사용승인까지 마쳤습니다.`,
   closing: "그래서 저희는 도면보다 땅과 법규부터 봅니다.",
-  cta: { label: "저희 이야기 더 보기 →", href: "/about" },
+  cta: { label: "저희 이야기 더 보기", href: "/about" },
 } as const;
 
 /* ── 분야(서비스) 섹션 ───────────────────────────────────── */
@@ -76,7 +75,6 @@ export const servicesContent = {
   items: [
     {
       id: "factory",
-      label: "01 — INDUSTRIAL",
       title: "공장 · 창고",
       description: "판넬 건물, 인허가부터 준공까지",
       image: "/images/service/factory.webp",
@@ -85,7 +83,6 @@ export const servicesContent = {
     },
     {
       id: "neighborhood",
-      label: "02 — COMMERCIAL",
       title: "근린생활시설",
       description: "소규모 상가·사무소, 용도변경 포함",
       image: "/images/service/neighborhood.webp",
@@ -94,7 +91,6 @@ export const servicesContent = {
     },
     {
       id: "church",
-      label: "03 — CHURCH",
       title: "교회",
       description: "공동체가 오래 머무는 공간",
       image: "/images/placeholder/service-church.jpg",
@@ -103,7 +99,6 @@ export const servicesContent = {
     },
     {
       id: "house",
-      label: "04 — RESIDENTIAL",
       title: "주택 · 모듈러하우스",
       description: "합리적인 비용의 전원 주택",
       image: "/images/placeholder/service-house.jpg",
@@ -112,7 +107,6 @@ export const servicesContent = {
     },
     {
       id: "interior",
-      label: "05 — PUBLIC",
       title: "관급 실내건축 설계",
       description: "공공 공간 리모델링",
       image: "/images/placeholder/service-interior.jpg",
@@ -121,7 +115,6 @@ export const servicesContent = {
     },
     {
       id: "supervision",
-      label: "06 — SUPERVISION",
       title: "감리 · 사용승인 대행",
       description: "짓는 과정과 마무리까지",
       image: "/images/placeholder/service-supervision.jpg",

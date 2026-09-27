@@ -62,13 +62,6 @@ export default function Header() {
             onClick={() => setMobileOpen(false)}
           >
             <span
-              className={`font-sans text-[11px] font-medium tracking-[0.15em] uppercase transition-colors ${
-                scrolled ? "text-concrete" : "text-white/70"
-              }`}
-            >
-              Architecture · Supervision · Permit
-            </span>
-            <span
               className={`font-serif text-base lg:text-lg font-light tracking-wide transition-colors ${
                 scrolled ? "text-ink" : "text-white"
               }`}

@@ -53,7 +53,6 @@ export default function ProcessSection() {
               </span>
             </div>
             <div className="p-6 lg:p-7">
-              <p className="label-en mb-2 text-accent">Free Checklist</p>
               <p className="font-serif text-lg font-light text-ink mb-4">
                 {checklistContent.formTitle}
               </p>
