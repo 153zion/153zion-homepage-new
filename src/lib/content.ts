@@ -382,6 +382,32 @@ export const modelingContent = {
   },
 } as const;
 
+/* ── 오시는 길 페이지 ────────────────────────────────────── */
+export const locationContent = {
+  heroTitle: "오시는 길",
+  heroSubtitle: "언제든 편하게 방문해 주세요. 미리 연락 주시면 더 원활하게 안내해 드립니다.",
+  addressLabel: "주소",
+  phoneLabel: "전화",
+  hoursLabel: "운영시간",
+  copyLabel: "주소 복사",
+  copiedLabel: "복사되었습니다",
+  directionsTitle: "길찾기",
+  directionApps: [
+    { id: "kakao", label: "카카오맵" },
+    { id: "naver", label: "네이버지도" },
+    { id: "tmap", label: "티맵" },
+  ],
+  galleryTitle: "사옥·주차 안내",
+  gallery: [
+    {
+      image: "/images/about/office-building.jpg",
+      alt: "(주)153시온건축사사무소 사옥 외관 및 방문객 주차 공간",
+    },
+  ],
+  ctaTitle: "지금 계획 중인 건축이 있으신가요?",
+  ctaLabel: "방문 상담 예약하기",
+} as const;
+
 /* ── 문의하기 페이지 ─────────────────────────────────────── */
 export const contactContent = {
   title: "무엇을 지으려고 하시나요?",
