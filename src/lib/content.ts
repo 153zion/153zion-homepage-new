@@ -348,19 +348,14 @@ export const modelingContent = {
       "형태·재질·색감 등을 정밀하게 표현함으로써, 도면으로는 확인하기 어려운 외관의 완성도를 직관적으로 파악할 수 있습니다.",
     items: [
       {
-        image: "/images/placeholder/3d-exterior-1.jpg",
-        alt: "3D 모델링 외부 렌더링 예시 1",
+        image: "/images/modeling/exterior-1.webp",
+        alt: "3D 모델링 외부 렌더링 — 교회",
         caption:
           "설계 단계에서 발생할 수 있는 오류를 사전에 발견하고 수정할 수 있어, 실제 시공 시 발생할 수 있는 비용 손실과 구조적 문제를 효과적으로 최소화할 수 있습니다.",
       },
       {
-        image: "/images/placeholder/3d-exterior-2.jpg",
-        alt: "3D 모델링 외부 렌더링 예시 2",
-        caption: "",
-      },
-      {
-        image: "/images/placeholder/3d-exterior-3.jpg",
-        alt: "3D 모델링 외부 렌더링 예시 3",
+        image: "/images/modeling/exterior-2.webp",
+        alt: "3D 모델링 외부 렌더링 — 주택",
         caption:
           "다양한 환경 조건(조명, 시간대, 주변 경관 등)을 시뮬레이션할 수 있어, 건축물이 실제 환경 속에서 어떻게 보일지를 현실감 있게 예측할 수 있습니다.",
       },
@@ -372,19 +367,14 @@ export const modelingContent = {
       "주요 실내 공간을 정밀하게 구현하여 가구 배치, 조명, 마감재 등 인테리어 요소를 시공 전에 실제처럼 시각화할 수 있습니다.",
     items: [
       {
-        image: "/images/placeholder/3d-interior-1.jpg",
-        alt: "3D 모델링 내부 렌더링 예시 1",
+        image: "/images/modeling/interior-1.webp",
+        alt: "3D 모델링 내부 렌더링 — 회의실",
         caption:
           "구조적 제약 요소(천장 높이, 기둥 위치, 벽체 두께 등)를 실제 공간처럼 반영하여, 설계 단계에서의 기술적 검토를 보다 정확하게 수행할 수 있습니다.",
       },
       {
-        image: "/images/placeholder/3d-interior-2.jpg",
-        alt: "3D 모델링 내부 렌더링 예시 2",
-        caption: "",
-      },
-      {
-        image: "/images/placeholder/3d-interior-3.jpg",
-        alt: "3D 모델링 내부 렌더링 예시 3",
+        image: "/images/modeling/interior-2.webp",
+        alt: "3D 모델링 내부 렌더링 — 상품 매장",
         caption:
           "공간의 분위기와 동선까지 사전에 검토할 수 있어, 디자인 완성도를 높이고 고객과의 커뮤니케이션을 원활하게 만듭니다.",
       },

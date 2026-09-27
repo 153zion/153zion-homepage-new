@@ -18,7 +18,7 @@ function ModelingGroup({ group }: { group: ModelingGroupData }) {
       <p className="font-sans text-sm text-concrete leading-relaxed max-w-[640px] mb-8">
         {group.subtitle}
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {group.items.map((item, i) => (
           <div key={i} className="flex flex-col gap-3">
             {item.image.startsWith("/images/placeholder/") ? (
