@@ -6,6 +6,7 @@ import PrinciplesSection from "@/components/about/PrinciplesSection";
 import LocalStrengthSection from "@/components/about/LocalStrengthSection";
 import TeamSection from "@/components/about/TeamSection";
 import ServicesDetailSection from "@/components/about/ServicesDetailSection";
+import ModelingSection from "@/components/about/ModelingSection";
 import AdminServiceSection from "@/components/about/AdminServiceSection";
 import HistorySection from "@/components/about/HistorySection";
 import { aboutContent } from "@/lib/content";
@@ -42,6 +43,7 @@ export default function AboutPage() {
       <LocalStrengthSection />
       <TeamSection />
       <ServicesDetailSection />
+      <ModelingSection />
       <AdminServiceSection />
       <HistorySection />
 
